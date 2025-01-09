@@ -4,6 +4,9 @@ import 'package:super_market/features/layout/chees.dart';
 import 'package:super_market/features/layout/milk.dart';
 
 import '../departments /departments_screen.dart';
+import '../layout/coca.dart';
+import '../layout/legumes.dart';
+import '../layout/rice_macaroni.dart';
 
 class HomeScreen extends StatefulWidget {
   static String routeName = 'home_screen';
@@ -19,6 +22,9 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> product = [
     Cheese(),
     Milk(),
+    Legumes(),
+    RiceMacaroni(),
+    CocaColaa(),
   ];
 
   int selectedIndex = 0;

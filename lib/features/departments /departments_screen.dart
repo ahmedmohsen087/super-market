@@ -16,6 +16,9 @@ class DepartmentsScreen extends StatelessWidget {
   final List<DepartmentsModel> departments = [
     DepartmentsModel(title: 'منتجات الألبان'),
     DepartmentsModel(title: 'منتجات الجبن'),
+    DepartmentsModel(title: ' قسم البقوليات'),
+    DepartmentsModel(title: 'الارز والمكرونة'),
+    DepartmentsModel(title: 'المشروبات الغازية'),
   ];
 
   @override
