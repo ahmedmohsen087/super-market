@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:super_market/core/theme/app_color.dart';
-import 'package:super_market/features/layout/chees.dart';
-import 'package:super_market/features/layout/milk.dart';
+import 'package:super_market/features/layout/pages/cheese.dart';
+import 'package:super_market/features/layout/pages/milk.dart';
 
 import '../departments /departments_screen.dart';
-import '../layout/coca.dart';
-import '../layout/legumes.dart';
-import '../layout/rice_macaroni.dart';
+import '../layout/pages/coca.dart';
+import '../layout/pages/legumes.dart';
+import '../layout/pages/rice_macaroni.dart';
 
 class HomeScreen extends StatefulWidget {
   static String routeName = 'home_screen';
@@ -20,8 +20,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> product = [
-    Cheese(),
     Milk(),
+    Cheese(),
     Legumes(),
     RiceMacaroni(),
     CocaColaa(),

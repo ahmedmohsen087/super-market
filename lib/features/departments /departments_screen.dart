@@ -31,7 +31,7 @@ class DepartmentsScreen extends StatelessWidget {
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
-            color: Colors.black,
+            color: AppColors.black,
           ),
         ),
         const SizedBox(height: 10),
