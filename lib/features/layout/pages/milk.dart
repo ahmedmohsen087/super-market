@@ -22,7 +22,7 @@ class Milk extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      color: Colors.orange,
+      color: AppColors.primaryColor,
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: GridView.builder(

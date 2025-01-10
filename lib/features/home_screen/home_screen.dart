@@ -4,6 +4,7 @@ import 'package:super_market/features/layout/pages/cheese.dart';
 import 'package:super_market/features/layout/pages/milk.dart';
 
 import '../departments /departments_screen.dart';
+import '../invoice /pages/invoice_screen.dart';
 import '../layout/pages/coca.dart';
 import '../layout/pages/legumes.dart';
 import '../layout/pages/rice_macaroni.dart';
@@ -93,6 +94,55 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ),
+                  InvoiceScreen(),
+                  Spacer(),
+                  Padding(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    child: Container(
+                      width: 389,
+                      height: 75,
+                      decoration: BoxDecoration(
+                        color: AppColors.orange,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: AppColors.primaryColor,
+                          width: 1,
+                        ),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            '20 EGP الاجمالي',
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: AppColors.white,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.symmetric(horizontal: 16),
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: AppColors.primaryColor,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                color: AppColors.primaryColor,
+                                width: 1,
+                              ),
+                            ),
+                            child: Text(
+                              'طباعة الفاتورة',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.orange),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
